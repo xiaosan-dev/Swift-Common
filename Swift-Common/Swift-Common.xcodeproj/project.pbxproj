@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD8B22BC2490C25200B0CCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B22BB2490C25200B0CCDF /* AppDelegate.swift */; };
-		CD8B22BE2490C25200B0CCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B22BD2490C25200B0CCDF /* SceneDelegate.swift */; };
 		CD8B22C02490C25200B0CCDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B22BF2490C25200B0CCDF /* ViewController.swift */; };
 		CD8B22C32490C25200B0CCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B22C12490C25200B0CCDF /* Main.storyboard */; };
 		CD8B22C52490C25400B0CCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8B22C42490C25400B0CCDF /* Assets.xcassets */; };
@@ -37,8 +36,7 @@
 /* Begin PBXFileReference section */
 		CD8B22B82490C25200B0CCDF /* Swift-Common.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Common.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B22BB2490C25200B0CCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD8B22BD2490C25200B0CCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD8B22BF2490C25200B0CCDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD8B22BF2490C25200B0CCDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ViewParts/ViewController/ViewController.swift; sourceTree = "<group>"; };
 		CD8B22C22490C25200B0CCDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD8B22C42490C25400B0CCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8B22C72490C25400B0CCDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,12 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				CD8B22BB2490C25200B0CCDF /* AppDelegate.swift */,
-				CD8B22BD2490C25200B0CCDF /* SceneDelegate.swift */,
-				CD8B22BF2490C25200B0CCDF /* ViewController.swift */,
-				CD8B22C12490C25200B0CCDF /* Main.storyboard */,
-				CD8B22C42490C25400B0CCDF /* Assets.xcassets */,
-				CD8B22C62490C25400B0CCDF /* LaunchScreen.storyboard */,
-				CD8B22C92490C25400B0CCDF /* Info.plist */,
+				CD8B22F82490C9F300B0CCDF /* Configs */,
+				CD8B22F42490C8EB00B0CCDF /* Services */,
+				CD8B22F32490C8DE00B0CCDF /* Models */,
+				CD8B22EF2490C81C00B0CCDF /* Screens */,
+				CD8B22EC2490C61600B0CCDF /* ViewParts */,
+				CD8B22F02490C87200B0CCDF /* Utils */,
+				CD8B22F22490C8C400B0CCDF /* Others */,
+				CD8B22F52490C91000B0CCDF /* Resources */,
 			);
 			path = "Swift-Common";
 			sourceTree = "<group>";
@@ -126,6 +126,99 @@
 				CD8B22DF2490C25500B0CCDF /* Info.plist */,
 			);
 			path = "Swift-CommonUITests";
+			sourceTree = "<group>";
+		};
+		CD8B22EB2490C60000B0CCDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD8B22EC2490C61600B0CCDF /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewParts;
+			sourceTree = "<group>";
+		};
+		CD8B22EF2490C81C00B0CCDF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B22F72490C93F00B0CCDF /* Launch */,
+				CD8B22F62490C92300B0CCDF /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CD8B22F02490C87200B0CCDF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B22F12490C88500B0CCDF /* Protocols */,
+				CD8B22EB2490C60000B0CCDF /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD8B22F12490C88500B0CCDF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CD8B22F22490C8C400B0CCDF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CD8B22F32490C8DE00B0CCDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD8B22F42490C8EB00B0CCDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD8B22F52490C91000B0CCDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B22C42490C25400B0CCDF /* Assets.xcassets */,
+				CD8B22C92490C25400B0CCDF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD8B22F62490C92300B0CCDF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B22BF2490C25200B0CCDF /* ViewController.swift */,
+				CD8B22C12490C25200B0CCDF /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD8B22F72490C93F00B0CCDF /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B22C62490C25400B0CCDF /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CD8B22F82490C9F300B0CCDF /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +354,6 @@
 			files = (
 				CD8B22C02490C25200B0CCDF /* ViewController.swift in Sources */,
 				CD8B22BC2490C25200B0CCDF /* AppDelegate.swift in Sources */,
-				CD8B22BE2490C25200B0CCDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

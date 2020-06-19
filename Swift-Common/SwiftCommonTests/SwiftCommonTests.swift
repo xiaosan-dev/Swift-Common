@@ -1,5 +1,5 @@
 //
-//  Swift_CommonTests.swift
+//  SwiftCommonTests.swift
 //  Swift-CommonTests
 //
 //  Created by wang xiaolong on 2020/6/10.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Swift_Common
 
-class Swift_CommonTests: XCTestCase {
+class SwiftCommonTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
